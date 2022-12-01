@@ -43,9 +43,12 @@ html {
     display: flex;
     gap: 15px;
     flex-direction: column;
-    background-color: getColor("white");
+    background-color: getColor(white);
 }
 
+.container__2 {
+    height: 280px;
+}
 
 
 
