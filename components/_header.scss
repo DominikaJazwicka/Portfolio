@@ -3,7 +3,7 @@
 /* Global Settings */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: getColor("white");
 }
 
@@ -52,80 +52,52 @@ html {
 
 
 
-.test {
-    display: flex;
-}
-
-
-.header__ul {
-    padding: 10px;
-}
-
-
-.header__active {
-    position: relative;
-    letter-spacing: 0.02em;
-}
-
-.header__active::after {
-    position: absolute;
-    display: block;
-    content: "";
-    top: 55px;
-    left: 0px;
-    width: 100%;
-    height: 4px;
-    background-color: getColor("blue");
-    border-radius: 10px;
-    z-index: 9;
-}
-
 .header {
     max-height: 80px;
     width: auto;
 }
 
-.header__link-nav-font {
-    font-weight: 900;
-    color: getColor("dark");
-}
+
 
 .header__item {
+    padding: 5px;
     margin-left: 25;
     font-weight: bold;
-    font-size: 24px;
-    color: getColor("black");
-    transition-duration: 0.3s;
+    font-size: 36px;
+    color: getColor("blackk");
+    display: inline;
+    transition: color 0.3s ease-in-out;
 }
 
 .header__item:hover {
-    color: getColor("blue");
+    color: getColor("pinkk");
 }
 
-.header__link {
-    color: getColor("blue");
-    transition-duration: 0.3s;
+.nav__div {
+    display: flex;
+    margin-top: 10%;
+
 }
 
-.header__link:hover {
-    color: #212121;
-}
 
 .nav__ul-div {
-    justify-content: center;
-    display: flex;
+    display: block;
+
+}
+
+
+.phone-number {
+    margin-left: 153px;
+}
+
+.mail {
+    margin-bottom: 17px;
 }
 
 .header-contact__item {
     display: flex;
     align-items: center;
 }
-
-.header__link-nav_contact{
-    padding-left: 10px;
-    transition-duration: 0.3s;
-}
-
 
 
 .header__nav2 {
@@ -142,66 +114,18 @@ html {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
     justify-content: space-around;
     align-items: center;
 
 }
 
 .header__link-nav {
+    font-weight: light;
     padding-left: 10px;
     text-decoration: none;
-    font-size: 14px;
-    position: relative;
-    color: gerColor("darkgrey");
-    transition-duration: 0.3s;
+    font-size: 16px;
+    color: getColor("blackk");
 }
-
-.header__link-nav1 {
-    padding-left: 10px;
-    text-decoration: none;
-    font-size: 14px;
-    position: relative;
-    color: gerColor("darkgrey");
-}
-
-
-
-
-.header-contact__link {
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
-    display: inline-flex;
-}
-
-
-.header-contact__link:hover svg { fill: getColor("blue")} 
-
-
-.header-contact__email {
-    padding-right: 10px;
-    fill: getColor("darkgrey");
-    transition-duration: 0.3s;
-
-
-&:hover {
-    fill: getColor("blue");
-}
-}
-
-.header-contact__phone {
-    padding-right: 10px;
-    fill: getColor("darkgrey");
-    transition-duration: 0.3s;
-
-&:hover {
-    fill: getColor("blue");
-}
-}
-
-
-
 
 
 
@@ -221,7 +145,7 @@ html {
 .line {
     width: 3em;
     height: .3em;
-    background-color: getColor("black");
+    background-color: getColor("blackk");
     margin: .7em;
     border-radius: 20px;
     transition: .3s ease-in-out;
@@ -235,12 +159,19 @@ html {
 
 @media only screen and (max-width: 668px) {
 
+    .header__item {
+        font-size: 24px;
+    }
 
+    .container__2 {
+        height: 120px;
+    }
     .header__link-nav-font {
         font-size: 40px;
     }
 
     .burger {
+        margin-top: 10%;
         display: block;
         transition-duration: 0.3s;
     }
@@ -263,7 +194,7 @@ html {
         position: absolute;
         right: 0;
         top: 0;
-        background-color: getColor("white");
+        background-color: getColor("whitee");
         height: 99vh;
         transform: translate(100%);
         transition-duration: 0.3s;
@@ -277,7 +208,7 @@ html {
     }
 
     .header__link-nav {
-        color: getColor("dark");
+        color: getColor("blackk");
         font-size: 2.5rem;
         letter-spacing: 2px;
     }
@@ -328,6 +259,7 @@ html {
     
     .header__link-nav_contact{
         font-size: 36px;
+        color: getColor("blackk");
     }
 
     .media-menu-div {
@@ -358,6 +290,12 @@ html {
 
 
 @media only screen and (max-width: 1000px) {
+
+    .container__2 {
+        height: 150px;
+    }
+
+
     .nav__ul {
         width: 100%;
         
