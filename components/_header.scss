@@ -67,7 +67,23 @@ html {
     color: getColor("blackk");
     display: inline;
     transition: color 0.3s ease-in-out;
+    position: relative;
+
 }
+
+.header__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 1px;
+    top: 39px;
+    left: 374px;
+    background-color: getColor("blackk");
+    z-index: 3;
+
+}
+
 
 .header__item:hover {
     color: getColor("pinkk");
@@ -87,13 +103,26 @@ html {
 
 
 .phone-number {
-    margin-left: 0px;
+    margin-left: 150px;
     transition: .3s ease-in-out;
 
     &:hover {
         color: getColor("pinkk");
     }
 }
+
+.phone-number::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 431px;
+    height: 1px;
+    top: 95px;
+    left: 636px;
+    background-color: getColor("blackk");
+    z-index: 3;
+}
+
 
 .mail {
     margin-bottom: 17px;
@@ -124,6 +153,7 @@ html {
 }
 
 .nav__ul {
+    margin-top: 45px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -174,7 +204,14 @@ html {
 
 @media only screen and (max-width: 668px) {
 
+    .header__item::after {
+        display: none;
+    }
 
+
+    .phone-number {
+        margin-left: 0px;
+    }
 
     .contact {
         display: block;
@@ -220,6 +257,7 @@ html {
 
 
     .nav__ul {
+        margin-top: 0;
         display: block;
         position: absolute;
         right: 0;
@@ -310,10 +348,15 @@ html {
     }
 
 
-    .media-menu:hover {
-        color: getColor("pinkk");
-    }
 
+    .media-text {
+        color: getColor("whitee");
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: getColor("pinkk");
+        }
+    }
 }
 
 
