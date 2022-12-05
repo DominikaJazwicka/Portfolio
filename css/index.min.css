@@ -2,6 +2,7 @@
 /* Global Settings */
 body {
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 * {
@@ -450,4 +451,32 @@ html {
   .footer__li {
     padding-bottom: 4px;
   }
+}
+.tech-skils {
+  margin-left: 2%;
+}
+
+.tech-skils__heading {
+  display: flex;
+  align-items: right;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 90px;
+}
+
+.tech {
+  margin-left: -122px;
+}
+
+.tech-skils__element {
+  font-size: 16px;
+  margin-left: 146px;
+}
+
+.tech-skils__block2 {
+  margin-top: 15px;
+}
+
+.tech-skils__block3 {
+  margin-top: 15px;
 }/*# sourceMappingURL=index.min.css.map */
