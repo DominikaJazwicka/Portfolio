@@ -148,7 +148,7 @@ html {
 .line {
     width: 3em;
     height: .3em;
-    background-color: getColor("blackk");
+    background-color: getColor("pinkk");
     margin: .7em;
     border-radius: 20px;
     transition: .3s ease-in-out;
@@ -197,21 +197,21 @@ html {
         position: absolute;
         right: 0;
         top: 0;
-        background-color: getColor("whitee");
+        background-color: getColor("blackk");
         height: 99vh;
         transform: translate(100%);
-        transition-duration: 0.3s;
+        transition-duration: 1s;
         z-index: 3;
     }
 
     .nav__ul.active {
         transform: translate(0%);
         display: block;
-        transition-duration: 0.3s;
+        transition-duration: 1s;
     }
 
     .header__link-nav {
-        color: getColor("blackk");
+        color: getColor("whitee");
         font-size: 2.5rem;
         letter-spacing: 2px;
     }
@@ -251,7 +251,7 @@ html {
     
     .header__link-nav {
         text-decoration: none;
-        font-size: 40px;
+        font-size: 14px;
         padding: 40px;
     }
     .header__link-nav1 {
