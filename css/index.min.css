@@ -2,7 +2,6 @@
 /* Global Settings */
 body {
   font-family: "Montserrat", sans-serif;
-  position: relative;
 }
 
 * {
@@ -452,11 +451,13 @@ html {
     padding-bottom: 4px;
   }
 }
-.tech-skils {
+.tech-skils, .soft-skils {
   margin-left: 2%;
 }
 
-.tech-skils__heading {
+.tech-skils__heading,
+.soft-skils__heading,
+.education__heading {
   display: flex;
   align-items: right;
   font-size: 20px;
@@ -464,19 +465,18 @@ html {
   margin-top: 90px;
 }
 
-.tech {
-  margin-left: -122px;
-}
-
+.soft-skils__element,
+.education__element,
 .tech-skils__element {
+  margin-top: 10px;
   font-size: 16px;
-  margin-left: 146px;
 }
 
-.tech-skils__block2 {
-  margin-top: 15px;
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-.tech-skils__block3 {
-  margin-top: 15px;
+.education__ul {
+  margin-left: 100px;
 }/*# sourceMappingURL=index.min.css.map */
