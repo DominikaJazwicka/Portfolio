@@ -87,11 +87,21 @@ html {
 
 
 .phone-number {
-    margin-left: 153px;
+    margin-left: 0px;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        color: getColor("pinkk");
+    }
 }
 
 .mail {
     margin-bottom: 17px;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        color: getColor("pinkk");
+    }
 }
 
 .header-contact__item {
@@ -130,7 +140,9 @@ html {
     color: getColor("blackk");
 }
 
-
+.contact {
+    display: none;
+}
 
 
 
@@ -161,6 +173,21 @@ html {
 
 
 @media only screen and (max-width: 668px) {
+
+
+
+    .contact {
+        display: block;
+        color: getColor("whitee");
+        font-weight: 700;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        font-size: 24px;
+        letter-spacing: 2px;
+
+
+    }
 
     .header__item {
         font-size: 24px;
@@ -210,7 +237,6 @@ html {
 
     .header__link-nav {
         color: getColor("whitee");
-        font-size: 2.5rem;
         letter-spacing: 2px;
     }
 
@@ -240,16 +266,17 @@ html {
     }
 
     .header-contact__email {
-        display: none;
+        display: flex;
     }    
 
     .header-contact__phone {
-        display: none;
+        display: flex;
+        margin-right: 100px;
 }
     
     .header__link-nav {
         text-decoration: none;
-        font-size: 14px;
+        font-size: 17px;
         padding: 40px;
     }
     .header__link-nav1 {
@@ -266,8 +293,12 @@ html {
     .media-menu-div {
         display: flex;
         font-size: 16px;
-        margin-top: 10%;
+        margin-top: 300px;
         margin-left: 13%;
+    }
+
+    .media-menu-div:hover {
+        color: getColor("pinkk");
     }
 
     .media-menu {
@@ -275,17 +306,15 @@ html {
         padding: 10px;
         color: getColor("whitee");
         transition: color 0.3s ease-in-out;
-
+        letter-spacing: 2px;
     }
+
 
     .media-menu:hover {
         color: getColor("pinkk");
     }
 
-
-
 }
-
 
 
 

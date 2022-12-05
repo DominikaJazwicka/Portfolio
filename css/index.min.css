@@ -68,11 +68,19 @@ html {
 }
 
 .phone-number {
-  margin-left: 153px;
+  margin-left: 0px;
+  transition: 0.3s ease-in-out;
+}
+.phone-number:hover {
+  color: #AB007B;
 }
 
 .mail {
   margin-bottom: 17px;
+  transition: 0.3s ease-in-out;
+}
+.mail:hover {
+  color: #AB007B;
 }
 
 .header-contact__item {
@@ -109,6 +117,10 @@ html {
   color: #000000;
 }
 
+.contact {
+  display: none;
+}
+
 /* Burger Styling */
 .burger {
   z-index: 4;
@@ -133,6 +145,16 @@ html {
 }
 
 @media only screen and (max-width: 668px) {
+  .contact {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
   .header__item {
     font-size: 24px;
   }
@@ -172,7 +194,6 @@ html {
   }
   .header__link-nav {
     color: #fff;
-    font-size: 2.5rem;
     letter-spacing: 2px;
   }
   .header__active::after {
@@ -198,14 +219,15 @@ html {
     margin-left: 10%;
   }
   .header-contact__email {
-    display: none;
+    display: flex;
   }
   .header-contact__phone {
-    display: none;
+    display: flex;
+    margin-right: 100px;
   }
   .header__link-nav {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 17px;
     padding: 40px;
   }
   .header__link-nav1 {
@@ -220,14 +242,18 @@ html {
   .media-menu-div {
     display: flex;
     font-size: 16px;
-    margin-top: 10%;
+    margin-top: 300px;
     margin-left: 13%;
+  }
+  .media-menu-div:hover {
+    color: #AB007B;
   }
   .media-menu {
     cursor: pointer;
     padding: 10px;
     color: #fff;
     transition: color 0.3s ease-in-out;
+    letter-spacing: 2px;
   }
   .media-menu:hover {
     color: #AB007B;
@@ -337,4 +363,28 @@ html {
 
 .main__button-look:hover {
   color: #fff;
+}
+
+@media only screen and (max-width: 668px) {
+  .main__topic {
+    font-size: 20px;
+    align-items: center;
+  }
+  .main__element {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .CV {
+    margin-left: -160px;
+  }
+  .Page {
+    margin-left: -12px;
+  }
+  .Graphic {
+    margin-left: 10px;
+  }
+  .Page-button {
+    margin-right: px;
+  }
 }/*# sourceMappingURL=index.min.css.map */

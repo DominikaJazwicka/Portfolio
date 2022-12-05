@@ -53,3 +53,33 @@
 .main__button-look:hover {
     color: getColor("whitee");
 }
+
+
+@media only screen and (max-width: 668px) {
+    .main__topic {
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .main__element {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .CV {
+        margin-left: -160px;
+    }
+
+    .Page {
+        margin-left: -12px;
+    }
+
+    .Graphic {
+        margin-left: 10px;
+    }
+
+    .Page-button {
+        margin-right: px;
+    }
+}
