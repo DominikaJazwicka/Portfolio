@@ -167,7 +167,7 @@ html {
     }
 
     .container__2 {
-        height: 120px;
+        height: 150px;
     }
     .header__link-nav-font {
         font-size: 40px;
@@ -176,7 +176,7 @@ html {
     .burger {
         margin-top: 10%;
         display: block;
-        transition-duration: 0.3s;
+        transition: .3s ease-in-out;
     }
 
     .burger.active .line:first-child {
@@ -193,21 +193,19 @@ html {
 
 
     .nav__ul {
-        display: none;
+        display: block;
         position: absolute;
         right: 0;
         top: 0;
         background-color: getColor("blackk");
-        height: 99vh;
+        height: 102vh;
         transform: translate(100%);
-        transition-duration: 1s;
+        transition: .3s ease-in-out;
         z-index: 3;
     }
 
     .nav__ul.active {
         transform: translate(0%);
-        display: block;
-        transition-duration: 1s;
     }
 
     .header__link-nav {
@@ -273,13 +271,15 @@ html {
     }
 
     .media-menu {
+        cursor: pointer;
         padding: 10px;
+        color: getColor("whitee");
+        transition: color 0.3s ease-in-out;
 
     }
 
     .media-menu:hover {
-        color: getColor("blue");
-        transition: .3s ease-in-out;
+        color: getColor("pinkk");
     }
 
 
@@ -331,5 +331,6 @@ html {
 
     .nav__ul-div {
         display: block;
+        
     }
 }
