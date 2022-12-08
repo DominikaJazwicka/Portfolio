@@ -37,3 +37,42 @@
         background-size: cover;
     }
 }
+
+
+.img-graphic {
+    width: auto;
+    height: auto;
+}
+
+
+@media screen and (min-width: 300px) {
+    .img-graphic {
+        width: auto;
+        height: 95px;
+        background-image: url("../img/AE3A1606\ 1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .img-graphic {
+        width: auto;
+        height: 150px;
+        background-image: url("../img/AE3A1606\ 1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .img-graphic {
+        width: auto;
+        height: 200px;
+        background-image: url("../img/AE3A1606\ 1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

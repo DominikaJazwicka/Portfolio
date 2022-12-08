@@ -355,6 +355,38 @@ html {
     background-size: cover;
   }
 }
+.img-graphic {
+  width: auto;
+  height: auto;
+}
+
+@media screen and (min-width: 300px) {
+  .img-graphic {
+    width: auto;
+    height: 95px;
+    background-image: url("../img/AE3A1606 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 700px) {
+  .img-graphic {
+    width: auto;
+    height: 150px;
+    background-image: url("../img/AE3A1606 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .img-graphic {
+    width: auto;
+    height: 200px;
+    background-image: url("../img/AE3A1606 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -498,4 +530,45 @@ html {
 
 .data__style {
   font-size: 14px;
+}
+
+.img-graphic {
+  margin-bottom: 90px;
+}
+
+.graphic {
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.graphic__ul {
+  margin-left: 250px;
+  display: flex;
+}
+
+.graphic__heading {
+  justify-content: center;
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: -240px;
+}
+
+.graphic__topic {
+  margin-right: 180px;
+  font-size: 18px;
+}
+.graphic__topic::after {
+  content: "";
+}
+
+.graphic__text {
+  width: 320px;
+  height: 500px;
+  margin-left: -190px;
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 20px;
 }/*# sourceMappingURL=index.css.map */
