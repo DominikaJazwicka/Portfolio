@@ -26,11 +26,30 @@
 //     margin-left: 330px;
 // }
 
+.element__padding {
+    padding-top: 20px;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: 90px;
 }
 
-.education__ul {
+.education__ul,
+.courses__ul {
     margin-left: 100px;
+}
+
+.button__cv {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.text__style {
+    font-weight: 500;
+}
+
+.data__style {
+    font-size: 14px;
 }
