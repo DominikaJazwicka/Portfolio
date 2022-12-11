@@ -23,10 +23,6 @@
     font-size: 16px;
 }
 
-// .tech-skils, .soft-skils {
-//     margin-left: 330px;
-// }
-
 .element__padding {
     padding-top: 20px;
 }
@@ -53,4 +49,17 @@
 
 .data__style {
     font-size: 14px;
+}
+
+
+@media only screen and (max-width: 668px) {
+
+    .wrapper {
+        display: block;
+    }
+
+    .soft-skils, .tech-skils {
+        margin-left: 100px;
+    }
+
 }
