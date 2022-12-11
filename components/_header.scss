@@ -204,6 +204,11 @@ html {
 
 @media only screen and (max-width: 668px) {
 
+
+    .header__nav2 {
+        display: none;
+    }
+
     .header__item::after {
         display: none;
     }
