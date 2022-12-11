@@ -213,6 +213,10 @@ html {
         display: none;
     }
 
+    .phone-number::after {
+        display: none;
+    }
+
 
     .phone-number {
         margin-left: 0px;
