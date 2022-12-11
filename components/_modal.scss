@@ -14,7 +14,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 90%;
+    width: 95%;
     min-height: 90%;
     transform: translate(-50%, -50%);
     background-color: getColor("whitee");
@@ -23,10 +23,10 @@
 
 .modal__close-btn {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
     background-color: getColor("white");
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
