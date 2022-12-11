@@ -231,8 +231,6 @@ html {
         margin-left: 10px;
         font-size: 24px;
         letter-spacing: 2px;
-
-
     }
 
     .header__item {
@@ -281,6 +279,7 @@ html {
     .nav__ul.active {
         transform: translate(0%);
         display: block;
+        transition: .3s ease-in-out;
     }
 
     .header__link-nav {
@@ -288,17 +287,6 @@ html {
         letter-spacing: 2px;
     }
 
-    .header__active::after {
-        position: absolute;
-        display: block;
-        content: "";
-        top: 0px;
-        left: 0px;
-        width: 0;
-        height: 4px;
-        border-radius: 0px;
-        z-index: 9;
-    }
 
     .test {
         display: block;
