@@ -215,7 +215,7 @@ html {
   }
   .nav__ul {
     margin-top: 0;
-    display: block;
+    display: none;
     position: absolute;
     right: 0;
     top: 0;
@@ -227,6 +227,7 @@ html {
   }
   .nav__ul.active {
     transform: translate(0%);
+    display: block;
   }
   .header__link-nav {
     color: #fff;
