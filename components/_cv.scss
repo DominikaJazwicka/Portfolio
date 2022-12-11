@@ -61,5 +61,27 @@
     .soft-skils, .tech-skils {
         margin-left: 100px;
     }
+    
+        
+    .tech-skils__heading, 
+    .soft-skils__heading, 
+    .education__heading {
+        display: flex;
+        align-items: right;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 60px;
+    }
+    
+    
+    .soft-skils__element, 
+    .education__element, 
+    .tech-skils__element {
+        margin-top: 10px;
+        font-size: 14px;
+    }
 
+    .data__style {
+        font-size: 12px;
+    }
 }
