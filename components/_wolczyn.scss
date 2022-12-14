@@ -4,24 +4,63 @@
 
 
 
-.wolczyn__gallery {
+.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 90px;
 }
 
-.wolczyn__element img {
+.gallery__element img {
     width: 500px;
     margin: 10px;
     cursor: pointer;
     transition: transform 0.5s;
 }
-.wolczyn__element img:hover{
+.gallery__element img:hover{
     transform: scale(1.1);
+    box-shadow: 13px 14px 39px -12px rgba(0, 0, 0, 1);
 }
 
 .logo {
     width: 1000px;
     margin-left: 350px;
+}
+
+.popup {
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.popup__img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup__close {
+    cursor: pointer;
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    color: getColor("whitee");
+    top: 50px;
+    right: 130px;
+    font-size: 64px;
+    padding: 10px;
+
+
 }
