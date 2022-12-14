@@ -5,6 +5,17 @@ const POPUP__IMG = document.querySelector(".popup__img");
 const ARROW__LEFT  = document.querySelector(".popup__arrow--left");
 const ARROW__RIGHT = document.querySelector(".popup__arrow--right");
 
+let currentImgIndex;
+
+const showNextImg = () => {
+    if (currentImgIndex === GALLERY__ELEMENT.length - 1) {
+        currentImgIndex = 0;
+    } else {
+        currentImgIndex++;
+    }
+    POPUP__IMG.src = GALLERY__ELEMENT[currentImgIndex].src;
+};
+
 
 GALLERY__ELEMENT.forEach((gallery__element, index) => {
     gallery__element.addEventListener("click", (e) => {
@@ -18,15 +29,7 @@ POPUP__CLOSE.addEventListener("click", () => {
     POPUP.classList.add("hidden");
 });
 
-ARROW__RIGHT.addEventListener("click", () => {
-    if (currentImgIndex === GALLERY__ELEMENT.length - 1) {
-        currentImgIndex = 0;
-    } else {
-        currentImgIndex++;
-    }
-    POPUP__IMG.src = GALLERY__ELEMENT[currentImgIndex].src;
-});
-
+ARROW__RIGHT.addEventListener("click", showNextImg); 
 
 ARROW__LEFT.addEventListener("click", () => {
     if (currentImgIndex === 0) {
@@ -35,4 +38,11 @@ ARROW__LEFT.addEventListener("click", () => {
         currentImgIndex--;
     }
     POPUP__IMG.src = GALLERY__ELEMENT[currentImgIndex].src;
+})
+
+document.addEventListener("keygown", (e) => {
+    if (e.code === "ArrowRight") {
+        showNextImg ();
+    }
+
 })
