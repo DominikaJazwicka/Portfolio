@@ -1,0 +1,27 @@
+@import "./utils/vars";
+
+
+
+
+
+.wolczyn__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+}
+
+.wolczyn__element img {
+    width: 500px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.wolczyn__element img:hover{
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 1000px;
+    margin-left: 350px;
+}
