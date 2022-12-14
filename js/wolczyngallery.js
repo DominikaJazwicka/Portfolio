@@ -7,7 +7,7 @@ const POPUP__IMG = document.querySelector(".popup__img");
 GALLERY__ELEMENT.forEach((gallery__element) => {
     gallery__element.addEventListener("click", (e) => {
     POPUP.classList.remove("hidden");
-    console.log(e.target);
+    POPUP__IMG.src = e.target.src;
 });
 });
 
