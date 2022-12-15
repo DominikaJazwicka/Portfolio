@@ -741,4 +741,20 @@ html {
   to {
     opacity: 0;
   }
+}
+@media only screen and (max-width: 668px) {
+  .gallery__element {
+    display: flex;
+    max-width: 80%;
+    margin: 0;
+    justify-content: center;
+  }
+  .popup__arrow {
+    position: absolute;
+    top: 80%;
+  }
+  .popup__close {
+    top: 20px;
+    right: 20px;
+  }
 }/*# sourceMappingURL=index.min.css.map */

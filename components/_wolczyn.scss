@@ -2,8 +2,6 @@
 
 
 
-
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +86,6 @@
     color: getColor("whitee");
     padding: 10px;
     border: none;
-    // border-radius: 50%;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 }
@@ -121,7 +118,6 @@
     }
 }
 
-
 @keyframes fadeOut {
 
     from {opacity: 1;
@@ -131,4 +127,27 @@
     to {opacity: 0;
 
     }
+}
+
+
+
+@media only screen and (max-width: 668px) {
+
+    .gallery__element {
+        display: flex;
+        max-width: 80%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .popup__arrow {
+        position: absolute;
+        top: 80%;
+    }
+
+    .popup__close {
+        top: 20px;
+        right: 20px;
+    }
+
 }

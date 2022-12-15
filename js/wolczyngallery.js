@@ -30,7 +30,7 @@ const closePopup =  () => {
     setTimeout(() => {
         POPUP.classList.add("hidden");
         POPUP.classList.remove("fade-out");
-    }, 100);
+    }, 300);
     
 };
 
