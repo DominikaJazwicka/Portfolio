@@ -636,6 +636,10 @@ html {
   transition: transform 0.5s;
 }
 
+.gallery img:focus .gallery img:focus {
+  border: solid 5px #AB007B;
+}
+
 .gallery__element img:hover {
   transform: scale(1.1);
   box-shadow: 13px 14px 39px -12px rgb(0, 0, 0);
@@ -719,7 +723,7 @@ html {
 }
 
 .popup.fade-out {
-  animation: fadeOut 0.3s;
+  animation: fadeOut 0.3s both;
 }
 
 @keyframes fadeIn {
@@ -732,9 +736,9 @@ html {
 }
 @keyframes fadeOut {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
-    opacity: 1;
+    opacity: 0;
   }
 }/*# sourceMappingURL=index.css.map */

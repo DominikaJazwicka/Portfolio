@@ -27,10 +27,11 @@ const showPreviousImg = () => {
 
 const closePopup =  () => {
     POPUP.classList.add("fade-out");
-    setTimeout (() => {
+    setTimeout(() => {
         POPUP.classList.add("hidden");
         POPUP.classList.remove("fade-out");
-    }, 300); 
+    }, 100);
+    
 };
 
 

@@ -17,6 +17,12 @@
     cursor: pointer;
     transition: transform 0.5s;
 }
+
+.gallery img:focus
+.gallery img:focus {
+    border: solid 5px getColor("pinkk");
+}
+
 .gallery__element img:hover{
     transform: scale(1.1);
     box-shadow: 13px 14px 39px -12px rgba(0, 0, 0, 1);
@@ -101,7 +107,7 @@
 
 
 .popup.fade-out {
-    animation: fadeOut 0.3s;
+    animation: fadeOut 0.3s both;
 }
 
 @keyframes fadeIn {
@@ -118,11 +124,11 @@
 
 @keyframes fadeOut {
 
-    from {opacity: 0;
+    from {opacity: 1;
 
     }
 
-    to {opacity: 1;
+    to {opacity: 0;
 
     }
 }
