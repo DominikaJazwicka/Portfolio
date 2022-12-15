@@ -647,6 +647,7 @@ html {
 }
 
 .popup {
+  animation: fadeIn 0.3s;
   z-index: 5;
   height: 100%;
   width: 100%;
@@ -715,4 +716,25 @@ html {
 
 .popup__arrow--right {
   right: 10%;
+}
+
+.popup.fade-out {
+  animation: fadeOut 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=index.min.css.map */

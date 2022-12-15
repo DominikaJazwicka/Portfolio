@@ -16,6 +16,23 @@ const showNextImg = () => {
     POPUP__IMG.src = GALLERY__ELEMENT[currentImgIndex].src;
 };
 
+const showPreviousImg = () => {
+    if (currentImgIndex === GALLERY__ELEMENT.length - 1) {
+        currentImgIndex = 0;
+    } else {
+        currentImgIndex++;
+    }
+    POPUP__IMG.src = GALLERY__ELEMENT[currentImgIndex].src;
+};
+
+const closePopup =  () => {
+    POPUP.classList.add("fade-out");
+    setTimeout (() => {
+        POPUP.classList.add("hidden");
+        POPUP.classList.remove("fade-out");
+    }, 300); 
+};
+
 
 GALLERY__ELEMENT.forEach((gallery__element, index) => {
     gallery__element.addEventListener("click", (e) => {
@@ -25,24 +42,41 @@ GALLERY__ELEMENT.forEach((gallery__element, index) => {
 });
 });
 
-POPUP__CLOSE.addEventListener("click", () => {
-    POPUP.classList.add("hidden");
-});
+POPUP__CLOSE.addEventListener("click", closePopup);
+
 
 ARROW__RIGHT.addEventListener("click", showNextImg); 
 
-ARROW__LEFT.addEventListener("click", () => {
-    if (currentImgIndex === 0) {
-        currentImgIndex = GALLERY__ELEMENT.length - 1;
-    } else {
-        currentImgIndex--;
-    }
-    POPUP__IMG.src = GALLERY__ELEMENT[currentImgIndex].src;
-})
 
-document.addEventListener("keygown", (e) => {
-    if (e.code === "ArrowRight") {
-        showNextImg ();
+ARROW__LEFT.addEventListener("click", showPreviousImg);
+
+
+
+document.addEventListener("keydown", (e) => { 
+
+    if(!POPUP.classList.contains("hidden")) {
+
+    if(e.key === "ArrowRight" || e.keyCode === 39) {
+        showNextImg();
     }
 
-})
+    if (e.key === "ArrowLeft" || e.keyCode === 37) {
+        showPreviousImg();
+    }
+
+    if (e.key === "Escape" || e.keyCode === 27) {
+        closePopup();
+    }
+}
+});
+
+POPUP.addEventListener("click", (e) => {
+    if (e.target === POPUP) {
+        closePopup();
+    }
+});
+
+
+
+
+
