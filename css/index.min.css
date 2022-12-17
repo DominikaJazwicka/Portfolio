@@ -144,6 +144,10 @@ html {
 
 /* Burger Styling */
 .burger {
+  margin-left: 75%;
+  position: fixed;
+  top: 20;
+  right: 20;
   z-index: 4;
   background: transparent;
   border: none;
@@ -209,15 +213,16 @@ html {
     transform: rotate(-320deg) translateY(-10px);
   }
   .nav__ul {
+    position: fixed;
     margin-top: 0;
     display: none;
-    position: absolute;
+    width: 100%;
+    left: 0;
     right: 0;
     top: 0;
     background-color: #000000;
     height: 102vh;
     transform: translate(100%);
-    transition: 0.3s ease-in-out;
     z-index: 3;
   }
   .nav__ul.active {
@@ -274,12 +279,10 @@ html {
     cursor: pointer;
     padding: 10px;
     color: #fff;
-    transition: color 0.3s ease-in-out;
     letter-spacing: 2px;
   }
   .media-text {
     color: #fff;
-    transition: color 0.3s ease-in-out;
   }
   .media-text:hover {
     color: #AB007B;
@@ -470,81 +473,6 @@ html {
   }
   .footer__li {
     padding-bottom: 4px;
-  }
-}
-.tech-skils, .soft-skils {
-  margin-left: 2%;
-}
-
-.tech-skils__heading,
-.soft-skils__heading,
-.education__heading {
-  display: flex;
-  align-items: right;
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 90px;
-}
-
-.soft-skils__element,
-.education__element,
-.tech-skils__element {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-.element__padding {
-  padding-top: 20px;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 90px;
-}
-
-.education__ul,
-.courses__ul {
-  margin-left: 100px;
-}
-
-.button__cv {
-  margin-top: 20px;
-  margin-left: 0px;
-}
-
-.text__style {
-  font-weight: 500;
-}
-
-.data__style {
-  font-size: 14px;
-}
-
-@media only screen and (max-width: 668px) {
-  .wrapper {
-    display: block;
-  }
-  .soft-skils, .tech-skils {
-    margin-left: 100px;
-  }
-  .tech-skils__heading,
-.soft-skils__heading,
-.education__heading {
-    display: flex;
-    align-items: right;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 60px;
-  }
-  .soft-skils__element,
-.education__element,
-.tech-skils__element {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  .data__style {
-    font-size: 12px;
   }
 }
 .img-graphic {
