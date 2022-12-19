@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* Global Settings */
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: getColor("white");
 }
 
 * {
@@ -22,6 +22,21 @@ html {
   overflow-x: hidden;
 }
 
+:root {
+  --white: #fff;
+  --black: #000000;
+  --pink: #AB007B;
+  --grey: #B7B7B9;
+}
+
+:root {
+  --white: #fff;
+  --black: #000000;
+  --pink: #AB007B;
+  --grey: #B7B7B9;
+}
+
+/* Global Settings */
 /* Nav Styling */
 .section {
   padding-bottom: 94px;
@@ -33,6 +48,7 @@ html {
   display: flex;
   gap: 15px;
   flex-direction: column;
+  background-color: var(--white);
 }
 
 .container__2 {
@@ -44,7 +60,7 @@ html {
   margin-left: 25;
   font-weight: bold;
   font-size: 36px;
-  color: #000000;
+  color: var(--black);
   display: inline;
   transition: color 0.3s ease-in-out;
   position: relative;
@@ -58,12 +74,12 @@ html {
   height: 1px;
   top: 39px;
   left: 374px;
-  background-color: #000000;
+  background-color: var(--black);
   z-index: 3;
 }
 
 .header__item:hover {
-  color: #AB007B;
+  color: var(--pink);
 }
 
 .nav__div {
@@ -80,7 +96,7 @@ html {
   transition: 0.3s ease-in-out;
 }
 .phone-number:hover {
-  color: #AB007B;
+  color: var(--pink);
 }
 
 .phone-number::after {
@@ -91,7 +107,7 @@ html {
   height: 1px;
   top: 95px;
   left: 636px;
-  background-color: #000000;
+  background-color: var(--black);
   z-index: 3;
 }
 
@@ -100,7 +116,7 @@ html {
   transition: 0.3s ease-in-out;
 }
 .mail:hover {
-  color: #AB007B;
+  color: var(--pink);
 }
 
 .header-contact__item {
@@ -113,6 +129,7 @@ html {
 }
 
 .header__nav2 {
+  background-color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,7 +152,7 @@ html {
   padding-left: 10px;
   text-decoration: none;
   font-size: 16px;
-  color: #000000;
+  color: var(--pink);
 }
 
 .contact {
@@ -159,7 +176,7 @@ html {
 .line {
   width: 3em;
   height: 0.3em;
-  background-color: #AB007B;
+  background-color: var(--pink);
   margin: 0.7em;
   border-radius: 20px;
   transition: 0.3s ease-in-out;
@@ -181,7 +198,7 @@ html {
   }
   .contact {
     display: block;
-    color: #fff;
+    color: var(--pink);
     font-weight: 700;
     margin-top: 100px;
     margin-bottom: 30px;
@@ -220,7 +237,7 @@ html {
     left: 0;
     right: 0;
     top: 0;
-    background-color: #000000;
+    background-color: var(--black);
     height: 102vh;
     transform: translate(100%);
     z-index: 3;
@@ -231,7 +248,7 @@ html {
     transition: 0.3s ease-in-out;
   }
   .header__link-nav {
-    color: #fff;
+    color: var(--white);
     letter-spacing: 2px;
   }
   .test {
@@ -264,7 +281,7 @@ html {
   }
   .header__link-nav_contact {
     font-size: 36px;
-    color: #000000;
+    color: var(--black);
   }
   .media-menu-div {
     display: flex;
@@ -273,19 +290,19 @@ html {
     margin-left: 13%;
   }
   .media-menu-div:hover {
-    color: #AB007B;
+    color: var(--pink);
   }
   .media-menu {
     cursor: pointer;
     padding: 10px;
-    color: #fff;
+    color: var(--white);
     letter-spacing: 2px;
   }
   .media-text {
-    color: #fff;
+    color: var(--white);
   }
   .media-text:hover {
-    color: #AB007B;
+    color: var(--pink);
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -299,6 +316,7 @@ html {
     width: auto;
     margin: auto;
     flex-direction: column;
+    background-color: getColor("white");
   }
 }
 @media only screen and (max-width: 1080px) {
@@ -379,6 +397,13 @@ html {
     background-size: cover;
   }
 }
+:root {
+  --white: #fff;
+  --black: #000000;
+  --pink: #AB007B;
+  --grey: #B7B7B9;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -402,11 +427,11 @@ html {
   width: 80px;
   height: 30px;
   border: 1px solid black;
-  background-color: #fff;
+  background-color: var(--white);
   transition: background 0.3s linear;
 }
 .main__button:hover {
-  background-color: #AB007B;
+  background-color: var(--pink);
 }
 
 .main__topic {
@@ -415,7 +440,7 @@ html {
 }
 
 .main__button-look {
-  color: #000000;
+  color: var(--black);
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 7px;
@@ -424,7 +449,7 @@ html {
 }
 
 .main__button-look:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 @media only screen and (max-width: 668px) {
@@ -447,15 +472,22 @@ html {
     margin-left: 10px;
   }
 }
+:root {
+  --white: #fff;
+  --black: #000000;
+  --pink: #AB007B;
+  --grey: #B7B7B9;
+}
+
 .footer {
   width: auto;
   height: 215px;
-  background-color: #B7B7B9;
+  background-color: var(--grey);
 }
 
 .footer__ul {
   font-size: 12px;
-  color: #fff;
+  color: var(--white);
   margin-top: 80px;
   margin-left: 70%;
 }
@@ -475,6 +507,13 @@ html {
     padding-bottom: 4px;
   }
 }
+:root {
+  --white: #fff;
+  --black: #000000;
+  --pink: #AB007B;
+  --grey: #B7B7B9;
+}
+
 .img-graphic {
   margin-bottom: 90px;
 }
@@ -511,7 +550,7 @@ html {
   margin-top: 25px;
   font-size: 14px;
   line-height: 20px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .button__graphic {
@@ -542,7 +581,7 @@ html {
     margin-top: 15px;
     font-size: 14px;
     line-height: 20px;
-    background-color: #fff;
+    background-color: var(--white);
     margin-left: 0;
   }
   .button__graphic {
@@ -550,6 +589,13 @@ html {
     margin-left: 0;
   }
 }
+:root {
+  --white: #fff;
+  --black: #000000;
+  --pink: #AB007B;
+  --grey: #B7B7B9;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -565,7 +611,7 @@ html {
 }
 
 .gallery img:focus .gallery img:focus {
-  border: solid 5px #AB007B;
+  border: solid 5px var(--pink);
 }
 
 .gallery__element img:hover {
@@ -609,7 +655,7 @@ html {
   position: fixed;
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: var(--white);
   top: 50px;
   right: 130px;
   font-size: 64px;
@@ -618,7 +664,7 @@ html {
 }
 
 .popup__close:hover {
-  color: #AB007B;
+  color: var(--pink);
   opacity: none;
 }
 
@@ -630,7 +676,7 @@ html {
   line-height: 128px;
   font-size: 72px;
   background-color: transparent;
-  color: #fff;
+  color: var(--white);
   padding: 10px;
   border: none;
   cursor: pointer;
@@ -638,7 +684,7 @@ html {
 }
 
 .popup__arrow:hover {
-  color: #AB007B;
+  color: var(--pink);
   opacity: none;
 }
 

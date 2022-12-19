@@ -3,13 +3,13 @@
 .footer {
     width: auto;
     height: 215px;
-    background-color: getColor("greyy");
+    background-color: var(--grey);
 }
 
 
 .footer__ul {
     font-size: 12px;
-    color: getColor("whitee");
+    color: var(--white);
     margin-top: 80px;
     margin-left: 70%;
 }

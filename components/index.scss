@@ -1,7 +1,8 @@
-@use "./utils/vars";
-@use "./header";
-@use "./sectionimg";
-@use "./main";
-@use "./footer";
-@use "./graphic";
-@use "./wolczyn";
+@import "./utils/global";
+@import "./utils/vars";
+@import "./header";
+@import "./sectionimg";
+@import "./main";
+@import "./footer";
+@import "./graphic";
+@import "./wolczyn";
