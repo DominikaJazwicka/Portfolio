@@ -22,6 +22,19 @@ html {
   overflow-x: hidden;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  background-color: var(--white);
+}
+
+.section {
+  padding-bottom: 94px;
+}
+
 :root {
   --white: #fff;
   --black: #000000;
@@ -40,15 +53,6 @@ html {
 /* Nav Styling */
 .section {
   padding-bottom: 94px;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
-  background-color: var(--white);
 }
 
 .container__2 {
@@ -152,7 +156,7 @@ html {
   padding-left: 10px;
   text-decoration: none;
   font-size: 16px;
-  color: var(--pink);
+  color: var(--black);
 }
 
 .contact {
@@ -198,7 +202,7 @@ html {
   }
   .contact {
     display: block;
-    color: var(--pink);
+    color: var(--white);
     font-weight: 700;
     margin-top: 100px;
     margin-bottom: 30px;
@@ -514,22 +518,19 @@ html {
   --grey: #B7B7B9;
 }
 
-.img-graphic {
-  margin-bottom: 90px;
-}
-
 .graphic {
   margin-bottom: 90px;
   display: flex;
   justify-content: center;
 }
-
+.graphic__img {
+  margin-bottom: 90px;
+}
 .graphic__ul {
   display: flex;
   justify-content: center;
   margin-bottom: 90px;
 }
-
 .graphic__heading {
   display: flex;
   font-size: 20px;
@@ -537,15 +538,31 @@ html {
   margin-bottom: 10px;
   margin-left: 245px;
 }
-
 .graphic__topic {
   margin-left: 30px;
   font-size: 18px;
 }
-
-.graphic__text {
+.graphic__text-marketing {
   width: 320px;
   height: 300px;
+  margin-left: 30px;
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--white);
+}
+.graphic__text-identification {
+  width: 320px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--white);
+}
+.graphic__text-campaign {
+  width: 320px;
+  height: 40px;
   margin-left: 30px;
   margin-top: 25px;
   font-size: 14px;
